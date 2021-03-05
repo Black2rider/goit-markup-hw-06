@@ -697,13 +697,18 @@ img {
   pointer-events: none;
 }
 
-.modal {
+.signup-form {
   margin-top: 100px;
   position: absolute;
   left: 50%;
   top: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
 
-  min-width: 528px;
   background-color: var(--text-hero-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -713,11 +718,11 @@ img {
 
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .signup-form {
   transform: translate(-50%, -50%) scale(1.5);
 }
 
-.modal-btn {
+.form-close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -733,12 +738,8 @@ img {
   border-radius: 50%;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.form-close:hover,
+.form-close:focus {
   color: var(--text-blue);
 }
 
-.modal .signup-form {
-  display: flex;
-  flex-direction: column;
-}
