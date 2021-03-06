@@ -53,54 +53,57 @@
     <section class="hero">
       <div class="hero-container">
         <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" data-modal-open>Заказать услугу</button>
+        <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
-          <form class="signup-form" name="signup" autocomplete="on" novalidate>
-            <button class="form-close" data-modal-close>
+          <div class="modal">
+            <button class="modal-close" data-modal-close>
               <svg width="18" height="18">
                 <use href="./images/sprite.svg#icon-close-black"></use>
               </svg>
             </button>
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <b class="appeal">Оставьте свои данные, мы вам перезвоним</b>
+             <form class="signup-form" name="signup" autocomplete="on" novalidate>
             <div class="form-field">
               <label for="text">
-                Имя
+                <p class="form-text">Имя</p>
                 <input type="text" name="username" />
               </label>
             </div>
 
             <div class="form-field">
               <label for="tel">
-                Телефон
+                <p class="form-text">Телефон</p>
                 <input type="tel" name="telephone" />
               </label>
             </div>
 
             <div class="form-field">
               <label for="email">
-                Почта
+                <p class="form-text">Почта</p>
                 <input type="email" name="email" />
               </label>
             </div>
 
             <div class="form-field">
               <label for="feedback">
-                Комментарий
+               <p class="form-text">Комментарий</p>
                 <textarea name="feedback" placeholder="Введите текст"></textarea>
               </label>
             </div>
 
             <div class="form-field">
               <label for="condition">
-                <p>
+                <input type="checkbox" name="condition" value="music" checked />
+                <p class="form-text">
                   <span></span>Соглашаюсь с рассылкой и принимаю Условия
                   договора
                 </p>
-                <input type="checkbox" name="condition" value="music" checked />
               </label>
             </div>
+            <button type="submit" class="hero-btn">Отправить</button>
           </form>
         </div>
+      </div>
       </div>
     </section>
 
