@@ -228,7 +228,6 @@ p {
   border-radius: 4px;
   color: var(--text-hero-white);
   background-color: var(--text-blue);
-  
 }
 
 .hero-container {
@@ -412,7 +411,7 @@ p {
   border-radius: 50%;
 
   transition: color 250ms var(--timing-function),
-  background-color 250ms var(--timing-function);
+    background-color 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -454,8 +453,8 @@ p {
   border-radius: 4px;
 
   transition: color 250ms var(--timing-function),
-  background-color 250ms var(--timing-function),
-  border 250ms var(--timing-function);
+    background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
 
 .clients-link:hover,
@@ -501,16 +500,16 @@ p {
   background: var(--background-btn);
 
   transition: color 250ms var(--timing-function),
-  background-color 250ms var(--timing-function),
-  box-shadow 250ms var(--timing-function);
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .proekts-btn:hover,
 .proekts-btn:focus {
   color: var(--text-hero-white);
   background-color: var(--text-blue);
-  box-shadow: 0px 1px 1px rgba(97, 32, 32, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(97, 32, 32, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* СПИСОК ПРОЕКТОВ */
@@ -555,7 +554,6 @@ img {
 .card-aside {
   width: 370px;
   height: 294px;
-  
 
   position: absolute;
   left: 0;
@@ -567,7 +565,7 @@ img {
 }
 
 .card:hover .card-aside,
-.card:focus .card-aside{
+.card:focus .card-aside {
   transform: translateY(0);
 }
 
@@ -701,22 +699,14 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  
-  display: flex;
-  flex-direction: column;
-  width: 528px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
-  
 
   background-color: var(--text-hero-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
-
 }
 
 .backdrop.is-hidden .modal {
@@ -734,7 +724,7 @@ img {
   width: 30px;
   height: 30px;
   margin: 8px 8px;
- 
+
   outline: none;
   cursor: pointer;
   fill: currentColor;
@@ -748,8 +738,13 @@ img {
   color: var(--text-blue);
 }
 
+.signup-form {
+  width: 528px;
+  padding: 40px;
+}
+
 .appeal {
-  margin-bottom: 12px;
+  margin-bottom: 102px;
 
   font-weight: 700;
   font-size: 20px;
@@ -761,17 +756,20 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
+  outline: 1px solid tomato;
+  text-align: start;
+}
+
+.form-field input {
+  padding: 0 20px;
 }
 
 .form-text {
-  margin-bottom: 4px;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-grey);
 }
 
 textarea {
