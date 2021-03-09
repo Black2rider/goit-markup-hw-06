@@ -75,24 +75,27 @@
                 autocomplete="on"
                 novalidate
               >
-                <b class="appeal">Оставьте свои данные, мы вам перезвоним</b>
+                <p class="appeal">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="form-field">
-                  <label for="text">Имя</label>
-                  <input type="text" name="username" />
+                  <label for="username" class="form-label">Имя</label>
+                  <input type="text" class="form-input" id="username"/>
+                  
                 </div>
 
                 <div class="form-field">
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="telephone" />
+                  <label for="telephone" class="form-label">Телефон</label>
+                  <input type="tel" class="form-input" id="telephone"/>
+                  
                 </div>
 
                 <div class="form-field">
-                  <label for="email">Почта</label>
-                  <input type="email" name="email" />
+                  <label for="email" class="form-label">Почта</label>
+                  <input type="email" class="form-input" id="email"/>
+                  
                 </div>
 
                 <div class="form-field">
-                  <label for="feedback">Комментарий</label>
+                  <label>Комментарий</label>
                   <textarea
                     name="feedback"
                     placeholder="Введите текст"
@@ -100,11 +103,11 @@
                 </div>
 
                 <div class="form-field">
-                  <label for="condition"></label>
+                  <label></label>
                   <input
                     type="checkbox"
                     name="condition"
-                    value="music"
+                    value="appeal"
                     checked
                   />
                   <p class="form-text">
