@@ -753,6 +753,7 @@ img {
 }
 
 .form-field {
+  
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -763,18 +764,46 @@ img {
 .form-input {
   width: 100%;
   margin: 0;
-  padding: 10px 20px;
+  padding: 11px 42px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .form-label {
+  margin-bottom: 4px;
+  text-align: left;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--text-grey);
 }
+
+.input-icon {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: currentColor;
+
+  transform: translateY(-50%);
+}
+
+.form-input:hover,
+.form-input:focus{
+  border: 1px solid var(--text-blue);
+  border-radius: 4px;
+}
+
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  color: var(--text-blue);
+}
+
 
 .form-text {
   font-weight: normal;
