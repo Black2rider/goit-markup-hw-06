@@ -6,12 +6,15 @@
   --text-white-footer: rgba(255, 255, 255, 0.9);
   --text-black: #212121;
   --text-grey: #757575;
+  --text-placeholder: rgba(117, 117, 117, 0.5);
   --background-hero: #c4c4c4;
   --background-btn: #f5f4fa;
+  --background-modal-btn: #188CE8;
   --border-proekts: #eeeeee;
   --background-footer: #2f303a;
   --background-family: #f5f4fa;
   --border-clients: #afb1b8;
+  --border-input: rgba(33, 33, 33, 0.2);
   --social-footer: rgba(255, 255, 255, 0.1);
   --background-work: rgba(47, 48, 58, 0.8);
   --background-card-aside: rgba(33, 150, 243, 0.9);
@@ -739,7 +742,8 @@ img {
 
 .signup-form {
   width: 528px;
-  padding: 40px;
+  padding: 32px 40px 48px;
+  margin: 0;
 }
 
 .appeal {
@@ -753,12 +757,14 @@ img {
 }
 
 .form-field {
-  
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin-top: 4px;
   margin-bottom: 10px;
+}
+
+.form-field:last-child {
+  margin-bottom: 30px;
 }
 
 .form-input {
@@ -766,7 +772,7 @@ img {
   margin: 0;
   padding: 11px 42px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-input);
   border-radius: 4px;
 }
 
@@ -804,15 +810,62 @@ img {
   color: var(--text-blue);
 }
 
+.form-comment {
+  padding: 12px 16px;
+}
+
+textarea {
+  min-height: 120px;
+  
+  resize: none;
+}
+
+textarea::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--text-placeholder);
+}
+
+.form-appeal {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+position: absolute;
+}
+
+.checkbox-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--text-black);
+  border-radius: 15%;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: tomato;
+}
 
 .form-text {
-  font-weight: normal;
+  display: inline-flex;
+  padding-left: 9px;
+
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-grey);
 }
 
-textarea {
-  resize: none;
+.modal-btn {
+  background-color: var(--background-modal-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
