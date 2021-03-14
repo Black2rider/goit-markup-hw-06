@@ -12,10 +12,12 @@
   --background-modal-btn: #188ce8;
   --border-proekts: #eeeeee;
   --background-footer: #2f303a;
+  --background-footer-input: rgba(255, 255, 255, 0.6);
   --background-family: #f5f4fa;
   --border-clients: #afb1b8;
   --border-input: rgba(33, 33, 33, 0.2);
   --social-footer: rgba(255, 255, 255, 0.1);
+  --footer-input-placeholder: rgba(255, 255, 255, 0.6);
   --background-work: rgba(47, 48, 58, 0.8);
   --background-card-aside: rgba(33, 150, 243, 0.9);
   --background-backdrop: rgba(0, 0, 0, 0.2);
@@ -909,9 +911,12 @@ img {
 }
 
 .footer-input {
-  padding: 14px 42px;
+  min-width: 358px;
+  padding: 14px 16px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-hero-white);
+  background-color: var(--background-footer);
+  border: 1px solid var(--background-footer-input);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
@@ -921,21 +926,29 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-input-placeholder);
 }
 
 .sign-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   min-width: 200px;
   padding: 10px 32px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 
   cursor: pointer;
   border-radius: 4px;
   color: var(--text-hero-white);
   background-color: var(--text-blue);
+}
+
+.sign-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+}
+
+.icon-send {
+  margin-left: 10px;
 }
