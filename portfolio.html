@@ -17,33 +17,35 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="page-header container">
-      <nav class="nav">
+    <header class="header container">
+      <nav class="header-nav">
         <a class="logo" href=""><span class="logo-color">Web</span>Studio</a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="/index.html">Студия</a>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="/index.html">Студия</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--current" href="">Портфолио</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link header-nav__link--current" href=""
+              >Портфолио</a
+            >
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Контакты</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-list">
-        <li class="header-contacts">
-          <a class="contacts" href="">
-            <svg class="contacts-link" width="16" height="12">
+      <ul class="header-contacts">
+        <li class="header-contacts__item">
+          <a class="header-contacts__link" href="">
+            <svg class="header-contacts__icon" width="16" height="12">
               <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
         </li>
-        <li class="header-contacts">
-          <a class="contacts" href="">
-            <svg class="contacts-link" width="10" height="16">
+        <li class="header-contacts__item">
+          <a class="header-contacts__link" href="">
+            <svg class="header-contacts__icon" width="10" height="16">
               <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a
@@ -174,8 +176,9 @@
                 <div class="card-thumb">
                   <img
                     src="./images/portfolio/inspiration.jpg"
-                    alt="Inspiration"/>
-                    <div class="card-aside">
+                    alt="Inspiration"
+                  />
+                  <div class="card-aside">
                     <p class="card-desk">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -258,50 +261,54 @@
       <div class="container footer-container">
         <!--Адресс-->
         <address class="address">
-          <a class="logo logo-footer" href=""
-            ><span class="logo-link">Web</span>Studio</a
+          <a class="logo logo__footer" href=""
+            ><span class="logo-color">Web</span>Studio</a
           >
-          <ul class="footer-list">
-            <li class="footer-items">
-              <a class="address-link adr" href=""
+          <ul class="address__list">
+            <li class="address__items">
+              <a class="address__link adr" href=""
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="footer-items">
-              <a class="address-link post" href="">info@devstudio.com</a>
+            <li class="address__items">
+              <a class="address__link address__contacts" href=""
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="footer-items">
-              <a class="address-link post" href="">+38 096 111 11 11</a>
+            <li class="address__items">
+              <a class="address__link address__contacts" href=""
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
         <div class="join">
-          <h3 class="features-heading join-heading">присоединяйтесь</h3>
+          <h3 class="content-title join__title">присоединяйтесь</h3>
           <ul class="social-card">
-            <li class="social-tumb">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
+            <li class="social-card__content">
+              <a class="social-card__link" href="">
+                <svg class="social-card__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-tumb">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
+            <li class="social-card__content">
+              <a class="social-card__link" href="">
+                <svg class="social-card__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-tumb">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
+            <li class="social-card__content">
+              <a class="social-card__link" href="">
+                <svg class="social-card__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-tumb">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
+            <li class="social-card__content">
+              <a class="social-card__link" href="">
+                <svg class="social-card__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -309,15 +316,20 @@
           </ul>
         </div>
         <div class="sign">
-          <h3 class="features-heading join-heading">Подпишитесь на рассылку</h3>
+          <h3 class="content-title sign__title">Подпишитесь на рассылку</h3>
 
-          <div class="sign-card">
-            <label for="sign-email" class="form-label">
-              <input type="email" class="footer-input" id="sign-email" placeholder="E-mail" />
+          <div class="sign__card">
+            <label for="sign-email" class="form__label">
+              <input
+                type="email"
+                class="sign__input"
+                id="sign-email"
+                placeholder="E-mail"
+              />
             </label>
-            <button class="sign-btn" type="submit">
-              <span class="sign-text">Подписаться</span>
-              <svg class="icon-send" width="24" height="24">
+            <button class="sign__btn" type="submit">
+              <span class="sign__text">Подписаться</span>
+              <svg class="sign__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -325,6 +337,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
